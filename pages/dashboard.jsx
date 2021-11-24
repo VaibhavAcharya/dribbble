@@ -20,7 +20,7 @@ const Dashboard = () => {
           setShots(await getShots());
         })();
       } else {
-        // Router.push("/");`
+        Router.push("/");
       }
     }
   }, [isLoading, isLoggedIn]);
