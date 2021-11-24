@@ -54,7 +54,6 @@ const Home = () => {
             pathname: "https://dribbble.com/oauth/authorize",
             query: {
               client_id: process.env.NEXT_PUBLIC_DRIBBBLE_CLIENT_ID,
-              redirect_uri: "http://localhost:3000/",
             },
           });
         }}
