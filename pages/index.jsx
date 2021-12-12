@@ -45,9 +45,24 @@ const Home = () => {
   }, [isLoading, isLoggedIn]);
 
   return (
-    <Layout className="grid place-items-center">
+    <Layout className="flex flex-col items-center justify-center gap-8">
+      <h1 className="bg-gradient-to-br from-rose-800 to-indigo-800 bg-clip-text font-archivo text-3xl text-transparent">
+        Dribbble Client
+      </h1>
+      <h2 className="font-archivo text-xl">
+        Simple app to show integration using{" "}
+        <a
+          href="https://developer.dribbble.com/v2/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          Dribbble API
+        </a>
+        .
+      </h2>
       <button
-        className="font-archivo bg-gray-900 hover:bg-gray-800 text-white px-4 py-1 rounded disabled:opacity-50"
+        className="font-archivo bg-gray-900 hover:bg-gray-800 text-white px-4 py-1 rounded disabled:opacity-50 disabled:cursor-wait"
         disabled={isLoading}
         onClick={() => {
           Router.push({

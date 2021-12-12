@@ -57,7 +57,8 @@ const Dashboard = () => {
           );
         })}
       </main>
-      <div className="flex flex-row items-center justify-center">
+      {/* Integrate pagination feature maybe. */}
+      {/* <div className="flex flex-row items-center justify-center">
         <button className="border-2 px-4 py-1 flex flex-row items-center justify-center gap-2 font-archivo font-bold text-sm rounded-lg">
           <span>Show More</span>
           <svg
@@ -74,7 +75,7 @@ const Dashboard = () => {
             />
           </svg>
         </button>
-      </div>
+      </div> */}
     </Layout>
   );
 };
